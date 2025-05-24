@@ -1,2 +1,11 @@
 # IntelliJ Project Metadata
 .idea/
+
+# Unused build files
+*.aux
+*.log
+*.out
+*.gz
+*.toc
+*.syntex.gz
+/build/
