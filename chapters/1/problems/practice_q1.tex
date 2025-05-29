@@ -1,0 +1,135 @@
+Imagine a room containing 14 people with the following age distribution:
+
+Age 14 \ - \ 1
+
+Age 15 \ - \ 1
+
+Age 16 \ - \ 3
+
+Age 22 \ - \ 2
+
+Age 24 \ - \ 2
+
+Age 25 \ - \ 5
+
+\bigskip
+
+Let $N(j)$ represent the number of people of age \textit{j} such that:
+
+\[
+    N = \sum_{j=0}^{\infty} \, N(j)
+\]
+
+Where N = 14, the total number of people. 
+
+\bigskip \bigskip
+
+\underline{\textbf{Practice Q1:}} \ \textbf{If you selected one individual at
+random from the room, what is the probability that the person's age would be
+15?}
+
+\bigskip
+
+\underline{Solution}
+
+Recall the number of 15-year-olds and the total number
+of people in the distribution.
+
+- There's one person aged 15
+
+- There's 14 people total
+
+\bigskip
+
+The probability is given by:
+
+\[
+    P(j) = \dfrac{N(j)}{N} = \boxed{\dfrac{1}{14}}
+\]
+
+\bigskip \bigskip
+
+\underline{\textbf{Practice Q2:}} \ \textbf{From the previous question, what is
+the probability of selecting someone age 14 or someone age 15 from the room?}
+
+\bigskip
+
+\underline{Solution}
+
+The probability of selecting someone who's 14 or 15 can be symbolically
+represented by the following:
+
+\[
+    P(14 \ \text{or} \ 15) = P(14 \cup 15)
+\]
+
+\newpage
+
+Because this scenario is a mutually exclusive selection (someone can't be both
+14 \textit{\textbf{\underline{and}}} 15 at the same time), this can be expressed
+equivalently as:
+
+\begin{align*}
+    P(14 \ \text{or} \ 15) &= P(14) + P(15) \\ \\
+    &= \dfrac{1}{14} + \dfrac{1}{14} \\ \\
+    &= \dfrac{2}{14} \\ \\
+    &= \boxed{\dfrac{1}{7}}
+\end{align*}
+
+Note that we took advantage of the following for this solution:
+
+\[
+    P(A \ \cup \ B) = P(A) + P(B) - P(A \ \cap \ B)
+\]
+
+
+Where, as we pointed out:
+
+\[
+    P(A \ \cap \ B) = 0
+\]
+
+\bigskip \bigskip
+
+\underline{\textbf{Practice Q3:}} \ \textbf{What's the total probability of
+picking one person among all the people in the room?}
+
+\bigskip
+
+\underline{Solution}
+
+It's likely obvious that the total probability is unity (we're
+\textit{guaranteed} to get at least \underline{one} person) but let's prove
+that with the following:
+
+\[
+    \sum_{j=0}^{\infty} \, P(j) = P(0) \, + \, P(1) \, + \dots \, + \, P(14) \,
+    + \, P(15) \, + \, \dots \, + \, P(24) \, + \, P(25) \, + \, \dots
+\]
+
+Everything outside of the age range of 14--25 will have a contribution of 0,
+so we can focus on these terms:
+
+\begin{align*}
+    &= \, P(14) \, + \, P(15) \, + \, P(16) \, + \, P(22) \, + \, P(24) \, + \,
+    P(25) \\ \\
+    &= \, \dfrac{1}{14} \, + \, \dfrac{1}{14} \, + \, \dfrac{3}{14} \, + \,
+    \dfrac{2}{14} \, + \, \dfrac{2}{14} \, + \, \dfrac{5}{14} = \dfrac{14}{14}
+    \, = \, \boxed{1}
+\end{align*}
+
+\newpage
+
+\underline{\textbf{Practice Q4:}} \ \textbf{What is the most probable age?}
+
+\bigskip
+
+\underline{Solution}
+
+The most probable age is the age in which $P(j)$ is a maximum for all allowed
+values of j.
+
+\begin{align*}
+    P(25) \, &= \, \dfrac{5}{14} \\ \\
+    &\Rightarrow \, \boxed{\text{25 is the most probable age.}}
+\end{align*}
