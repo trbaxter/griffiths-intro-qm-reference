@@ -133,3 +133,52 @@ values of j.
     P(25) \, &= \, \dfrac{5}{14} \\ \\
     &\Rightarrow \, \boxed{\text{25 is the most probable age.}}
 \end{align*}
+
+\bigskip \bigskip
+
+\underline{\textbf{Practice Q5:}} \ \textbf{What is the median age?}
+
+\bigskip
+
+\underline{Solution}
+
+First off - ensure that the values are sorted from least to greatest.
+
+For such a small dataset, it may be temping to cross-out values one-by-one on
+both ends, but there's a superior way.
+
+When the number of elements N is even, the median is the average of the elements
+in the $\dfrac{N}{2}$ and $\dfrac{(N+1)}{2}$ positions. When the number of
+elements is odd, the median is simply the element in the $\dfrac{N}{2}$
+position.
+
+\[
+    \Rightarrow \dfrac{22+24}{2} = \boxed{23}
+\]
+
+\bigskip \bigskip
+
+\underline{\textbf{Practice Q6:}} \ \textbf{What is the average age?}
+
+\bigskip
+
+\underline{Solution}
+
+Since \textit{j} represents an age, the average age can be written as
+$\langle j \rangle$. In general:
+
+\begin{align*}
+    \langle j \rangle &= \dfrac{\sum \, j \cdot N(j)}{N} \\
+    &= \sum_{j=0}^{\infty} \, j \cdot P(j)
+\end{align*}
+
+\newpage
+
+Using this approach:
+
+\begin{align*}
+    \dfrac{\dots \, + \, 14 \, + \, 15 \, + \, (3 \cdot 16) \, + \, \dots \,
+        (2 \cdot 22) \, + \, (0 \cdot 23) \, + \, (2 \cdot 24) \, + \,
+        (5 \cdot 25) \, + \, \dots}{14} &= \dfrac{294}{14}
+    \, &= \, \boxed{21}
+\end{align*}
