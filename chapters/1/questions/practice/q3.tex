@@ -1,0 +1,28 @@
+
+
+\underline{\textbf{Practice Q3:}} \ \textbf{What's the total probability of
+picking one person among all the people in the room?}
+
+\bigskip
+
+\underline{Solution}
+
+It's likely obvious that the total probability is unity (we're
+\textit{guaranteed} to get at least \underline{one} person) but let's prove
+that with the following:
+
+\[
+    \sum_{j=0}^{\infty} \, P(j) = P(0) \, + \, P(1) \, + \dots \, + \, P(14) \,
+    + \, P(15) \, + \, \dots \, + \, P(24) \, + \, P(25) \, + \, \dots
+\]
+
+Everything outside of the age range of 14--25 will have a contribution of 0,
+so we can focus on these terms:
+
+\begin{align*}
+    &= \, P(14) \, + \, P(15) \, + \, P(16) \, + \, P(22) \, + \, P(24) \, + \,
+    P(25) \\[1.5ex]
+    &= \, \dfrac{1}{14} \, + \, \dfrac{1}{14} \, + \, \dfrac{3}{14} \, + \,
+    \dfrac{2}{14} \, + \, \dfrac{2}{14} \, + \, \dfrac{5}{14} = \dfrac{14}{14}
+    \, = \, \boxed{1}
+\end{align*}
