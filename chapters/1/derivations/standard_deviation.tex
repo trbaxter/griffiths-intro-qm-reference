@@ -9,17 +9,17 @@ Where $\sigma$ is a statistical quantity referred to as `variance'.
 Using the definition of the average value of a function:
 
 \begin{align*}
-    &= \sum_{j=0}^{\infty} (\Delta j)^{2} P(j) \\[1.5ex]
-    &= \sum_{j=0}^{\infty} (j - \langle j \rangle)^{2} P(j) \\[1.5ex]
-    &= \sum_{j=0}^{\infty} (\,j^{2} - 2j \langle j \rangle + \langle j \rangle^{2}\,) P(j) \\[1.5ex]
-    &= \sum_{j=0}^{\infty} j^2 P(j) - 2 \langle j \rangle \sum_{j=0}^{\infty} jP(j)
-       + \langle j \rangle^{2} \sum_{j=0}^{\infty} P(j)
+    &= \sum_{j=0}^{\infty} ( \, \Delta j \,)^{2} P(j) \\[1.5ex]
+    &= \sum_{j=0}^{\infty} (j - \langle \, j \, \rangle)^{2} P(j) \\[1.5ex]
+    &= \sum_{j=0}^{\infty} (\,j^{2} - 2j \langle \, j \, \rangle + \langle \, j \, \rangle^{2}\,) P(j) \\[1.5ex]
+    &= \sum_{j=0}^{\infty} j^2 P(j) - 2 \langle \, j \, \rangle \sum_{j=0}^{\infty} jP(j)
+       + \langle \, j \, \rangle^{2} \sum_{j=0}^{\infty} P(j)
 \end{align*}
 
 Recall that:
 
 \[
-    \langle j \rangle = \sum_{j=0}^{\infty} P(j)
+    \langle \, j \, \rangle = \sum_{j=0}^{\infty} P(j)
 \]
 
 As well as:
@@ -31,7 +31,26 @@ As well as:
 Which means the final line in the previous set of expressions can be written as:
 
 \begin{align*}
-    &= \langle j^{2} \rangle - 2 \langle j \rangle \langle j \rangle + \langle j \rangle^{2} \\[1.5ex]
-    &= \langle j^{2} \rangle - 2 \langle j \rangle^{2} + \langle j \rangle^{2} \\[1.5ex]
-    &= \boxed{\langle j^{2} \rangle - \langle j \rangle^{2}}
+    &= \langle \, j^{2} \, \rangle - 2 \langle \, j \, \rangle \langle \, j \, \rangle + \langle \, j \, \rangle^{2}
+    \\[1.5ex]
+    &= \langle \, j^{2} \, \rangle - 2 \langle \, j \, \rangle^{2} + \langle \, j \, \rangle^{2} \\[1.5ex]
 \end{align*}
+
+\newpage
+
+Therefore:
+
+\begin{align*}
+    \sigma^{2} &\equiv \boxed{\langle \, j^{2} \, \rangle - \langle \, j \, \rangle^{2}}
+\end{align*}
+
+\bigskip
+
+Given that $\langle \, x \, \rangle \neq \langle \, x \, \rangle^{2}$ in general, and based off the result of the
+derivation, this would imply that:
+
+\[
+    \langle \, j^{2} \, \rangle \geq \langle \, j \, \rangle^{2}
+\]
+
+The sides are equal \underline{only} when $\sigma = 0$.
