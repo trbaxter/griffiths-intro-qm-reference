@@ -26,9 +26,19 @@ Solving for the total fall time, $T$:
   \sqrt{\dfrac{2h}{g}} &= T
 \end{align*}
 
-The time average of $y(t)$ over the time interval of [$0, T$] is:
+The time average of the distance traveled by the rock, represented by $y(t)$, is just
+$\langle \, y \, \rangle$ divided by the total time, $T$:
 
 \begin{align*}
   \langle \, y \, \rangle &= \dfrac{1}{T} \int_{0}^{T} y(t) \, dt \\[1.5ex]
-  &= \dfrac{1}{T} \int_{0}^{T} \dfrac{1}{2}gt^2 \, dt
+  &= \dfrac{1}{T} \int_{0}^{T} \dfrac{1}{2}gt^{2} \, dt \\[1.5ex]
+  &= \dfrac{g}{2T} \int_{0}^{T} t^{2} \, dt \\[1.5ex]
+  &= \dfrac{g}{2T} \Bigg[ \dfrac{t^{3}}{3} \Bigg] \Bigg|_{0}^{T}
+\end{align*}
+
+\newpage
+
+\begin{align*}
+  &= \frac{gT^{3}}{6T} \\[1.5ex]
+  &= \dfrac{gT^{2}}{6}
 \end{align*}
