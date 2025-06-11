@@ -1,0 +1,37 @@
+For the distribution of ages mentioned in practice problem \#1, calculate the following:
+
+a.) Compute $\langle \, j^{2} \, \rangle$ and $\langle \, j \, \rangle^{2}$.
+
+b.) Determine $\Delta j$ for each \textit{j}, and use $\sigma \equiv \langle \, ( \Delta j )^{2} \, \rangle$ to
+get the standard deviation.
+
+c.) Use the results from (a) and (b) to check the result of
+$\sigma = \sqrt{ \langle \, j^{2} \, \rangle - \langle \, j \, \rangle^{2} }\,$.
+
+\bigskip
+\hrule height 0.75pt
+\bigskip
+
+a.) First sort the age distribution from lowest age to highest:
+
+14, 15, 16, 16, 16, 22, 22, 24, 24, 25, 25, 25, 25, 25
+
+\smallskip
+
+Recall that:
+
+\[
+  \langle \, j^{2}  \, \rangle \, = \, \frac{1}{N} \sum_{j=0}^{\infty} j^{2} N(j)
+\]
+
+Where $N(j)$ is the number of people of age $j$, and $N$ represents the total number of people.
+
+\begin{align*}
+  \langle \, j^{2} \, \rangle &=
+  \frac{1}{14}
+  \big(\dots \, + \, 14^{2} \, + \, 15^{2} \, + \, 3 \cdot 15^{2} \, + \, \dots \, + \, 2 \cdot 22^{2} \, +
+  \, \dots \, + \, 2 \cdot 24^{2} \, + \, 5 \cdot 25^{2} \big) \\[2ex]
+  &= \frac{1}{14} \big(6434\big) \\[2ex]
+  &= 459.571\dots \\[2ex]
+  &\approxeq 460
+\end{align*}

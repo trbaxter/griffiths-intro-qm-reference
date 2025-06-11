@@ -9,36 +9,65 @@ words, what is the time average of the distance traveled?
 Since the rock is dropped from rest, the distance it falls at some time $t$ is given by:
 
 \[
-  y(t) = \dfrac{1}{2}gt^{2}
+  y(t) = \frac{1}{2}gt^{2}
 \]
 
 The time it takes to fall the full height, $h$, is:
 
 \[
-  h = \dfrac{1}{2}gT^{2}
+  h = \frac{1}{2}gT^{2}
 \]
 
 Solving for the total fall time, $T$:
 
 \begin{align*}
   2h &= gT^{2} \\[1.5ex]
-  \dfrac{2h}{g} &= T^{2} \\[1.5ex]
-  \sqrt{\dfrac{2h}{g}} &= T
+  \frac{2h}{g} &= T^{2} \\[1.5ex]
+  \sqrt{\frac{2h}{g}} &= T
 \end{align*}
 
 The time average of the distance traveled by the rock, represented by $y(t)$, is just
 $\langle \, y \, \rangle$ divided by the total time, $T$:
 
 \begin{align*}
-  \langle \, y \, \rangle &= \dfrac{1}{T} \int_{0}^{T} y(t) \, dt \\[1.5ex]
-  &= \dfrac{1}{T} \int_{0}^{T} \dfrac{1}{2}gt^{2} \, dt \\[1.5ex]
-  &= \dfrac{g}{2T} \int_{0}^{T} t^{2} \, dt \\[1.5ex]
-  &= \dfrac{g}{2T} \Bigg[ \dfrac{t^{3}}{3} \Bigg] \Bigg|_{0}^{T}
+  \langle \, y \, \rangle &= \frac{1}{T} \int_{0}^{T} y(t) \, dt \\[1.5ex]
+  &= \frac{1}{T} \int_{0}^{T} \frac{1}{2}gt^{2} \, dt \\[1.5ex]
+  &= \frac{g}{2T} \int_{0}^{T} t^{2} \, dt \\[1.5ex]
+  &= \frac{g}{2T} \Bigg[ \frac{t^{3}}{3} \Bigg] \Bigg|_{0}^{T}
 \end{align*}
 
 \newpage
 
 \begin{align*}
   &= \frac{gT^{3}}{6T} \\[1.5ex]
-  &= \dfrac{gT^{2}}{6}
+  &= \frac{gT^{2}}{6}
 \end{align*}
+
+Rewriting in terms of known quantities:
+
+\begin{align*}
+  &= \frac{g \Big(\sqrt{\frac{2h}{g}} \, \Big)^{2}}{6} \\[1.5ex]
+  &= \frac{2h}{6} \\[1.5ex]
+  \therefore \: \langle \, y \, \rangle &= \boxed{\frac{h}{3}}
+\end{align*}
+
+\bigskip
+
+The result agrees with Griffith's statements about the rock spending more time near the top of the fall and how the
+result must be less than \textit{h}/2.
+
+\textbf{\underline{The big idea}}
+
+Probability is not always uniform across space; it depends on how much ``time'' a system spends in a given
+configuration.
+
+\smallskip
+
+\textbf{\underline{A deeper look}}
+
+The problem illustrates the differences in \textit{time vs. space sampling}.
+
+A uniform sampling of distance for the rock would result in an average distance of \textit{h}/2. \newline But this
+problem samples through \textit{time}, which is not uniformly distributed through space.
+
+\newpage
